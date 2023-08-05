@@ -2,53 +2,121 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CECyTE 30 - Texmolac</title>
-    <link rel="stylesheet" href="estilos.css">
-    
-<!--<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <title>CECyTE 30 TEXMOLAC</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Manrope:wght@400;700&family=Orbitron:wght@400;500;600&family=Oswald:wght@300;400&family=Teko&display=swap" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <script defer src="js/app.js"></script>
+
 </head>
-
-
-<header>
-    <nav>
-        <a href="#" class="logo">
-            <img src="logocecyte.png" alt="" srcset="">
-        </a>
-      <!--
-          <div class="logo">
-          <img src="logocecyte.png" alt="" srcset="">
-          <a href="#">Cecyte30</a>
-
-
-          </div> 
-        <div class="enlaces uno" id="enlaces">
-    -->
-        <ul>
-            <li><a href="#" class="" id="">Inicio</a></li>
-            <li><a href="#" class="" id="">Acerca de</a></li>
-            <li><a href="#" class="" id="">Carreras</a></li>
-            <li><a href="#" class="" id="">Alumnos</a></li>
-            <li><a href="#" class="" id="">Contacto</a></li>
-        </ul>   
-    </nav>
-</header>
-<section class="zona1"></section>
-<section>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nihil nesciunt consequuntur excepturi distinctio,
-    beatae similique itaque eum odit. Fugit sit vel commodi dignissimos praesentium tempore suscipit cupiditate! Provident,
-    minima.
-</section>
-<section>
-    <img src="BAnner-cecyte.jpg" alt="">
-</section>
-
 <body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img 
+                height="50" 
+                width="50"
+                src="img/logocecyte.png" 
+                alt="logocecyte30">
+                <div class="logotype">
+                    CECyTE 30<br />
+                    TEXMOLAC
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="img/icons8-menu (2).svg" alt="abrir menu">            
+            </button> 
 
-</body>
+            <ul class="menu">
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <img src="img/close-icon.svg" alt="cerrar menu">            
+                </button>
 
-<script src="menu.js"></script>
-</html> 
+                <li><a href="#inicio" class="selected">Inicio</a></li>
+                <li><a href="#acerca">Acerca</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="profile">
+            <div class="profile-info">
+                <h1 class="profile-title">Hola bienvenido<br> Conocenos Ahora</h1>
+                <p class="profile-details">
+                    somos una institucion comprometida con la educacion de nuestros estudiantes, nuestra mision es: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit cupiditate illum odit veritatis eveniet perferendis expedita! Perspiciatis dignissimos quae dolores facere voluptatum optio. Voluptate. Y la vision es:
+                </p>
+                <button class="profile-btn">descargar inf.</button>
+            </div>
+            <span class="profile-img-section">
+                <img class="profile-img" src="img/prueba.jpg" alt="cecyte instalaciones">
+                <div class="profile-img-line"></div>
+            </span>
+        </section>
+    </div>
+
+    <section class="experiences">
+        <img src="img/onda-division.svg" alt="division" class="wave">
+        <div class="experiences-body">
+            <h2 class="experiences-title">Experiencias</h2>
+            <div class="experiences-grid">
+                <div class="experience">
+                    <div class="experience-date">2021</div>
+                    <div class="experience-company">Group innovation</div>
+                    <div class="experience-position">Senior Software Development</div>
+                    <div class="experience-description">
+                      Se desarrollaron diferentes proyectos de inovacion especificamente de software enfocandose en la inteligencia artificial y su uso comercial y para el desarrollo libre
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience-date">2040</div>
+                    <div class="experience-company">Group salinas</div>
+                    <div class="experience-position">proyects manager</div>
+                    <div class="experience-description">
+                      Se desarrollaron diferentes proyectos de inovacion especificamente de software enfocandose en la inteligencia artificial y su uso comercial y para el desarrollo libre
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="experience-date">2021</div>
+                    <div class="experience-company">Group innovation</div>
+                    <div class="experience-position">Senior Software Development</div>
+                    <div class="experience-description">
+                      Se desarrollaron diferentes proyectos de inovacion especificamente de software enfocandose en la inteligencia artificial y su uso comercial y para el desarrollo libre
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <img src="img/onda-division.svg" alt="division" class="wave wave-bottom">
+    </section>
+
+
+    <div class="horizontal-padding vertical-padding">
+        <section class="skills">
+            <h2 class="skills-title">Habilidades</h2>
+            <ul class="skills-list">
+                <li class="skills-skill">Css</li>
+                <li class="skills-skill">HTML</li>
+                <li class="skills-skill">JavaScript</li>
+                <li class="skills-skill">Python</li>
+                <li class="skills-skill">Java</li>
+            </ul>
+        </section>
+    </div>
+  </body>
+</html>

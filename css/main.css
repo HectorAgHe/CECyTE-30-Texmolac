@@ -1,0 +1,58 @@
+:root{
+    --theme-color:white;
+    --primary-color:#124f88;
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color:black;
+    --navbar-shallow-color:#e5e5e5;
+    --menu-mobile-background-color:#001d6d;
+
+    --primary-color-wave: #0CA914;
+
+    /*#0CA914*/
+}
+/*
+font-family: 'Handjet', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Teko', sans-serif;
+Franklin  -- no descargada pero la muestra, posible fallo
+*/
+body{
+    font-family: 'Manrope', sans-serif;
+    /*font-family: 'Orbitron', sans-serif, franklin;*/
+    color: var(--text-color);
+    background-color: var(--theme-color);
+    padding-top: 120px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media(min-width:950px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    
+    }
+    
+    .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+}
