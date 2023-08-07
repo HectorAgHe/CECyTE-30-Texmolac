@@ -11,6 +11,18 @@
 
     /*#0CA914*/
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
+section[id]{
+    scroll-margin-top: 125px;
+}
+section[id="experiences"]{
+    scroll-margin-top: -60px;
+}
+
 /*
 font-family: 'Handjet', cursive;
 font-family: 'Manrope', sans-serif;
@@ -24,7 +36,7 @@ body{
     /*font-family: 'Orbitron', sans-serif, franklin;*/
     color: var(--text-color);
     background-color: var(--theme-color);
-    padding-top: 120px;
+    padding-top: 78px;
 }
 
 a{
