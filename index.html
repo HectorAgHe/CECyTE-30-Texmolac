@@ -142,8 +142,75 @@
         </section>
     </div>
 
-    <div class="contact vertical-padding" id="contact">
-        <h2 class="contact title">Contacto</h2>
-    </div>
+    <div class="horizontal-padding vertical-padding">
+        <section class="contact" id="contact">
+            <h2 class="contact-title">Contacto</h2>
+            <div class="contact-details">
+                <div class="contact-details-group">
+                    <p class="contact-label">Direccion</p>
+                    <p class="contact-text">C.Miguel Hidalgo #30</p>
+                </div>
+
+                <div class="contact-details-group">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-text">Cecyte30Tlax.com</p>
+                </div>
+
+                <div class="contact-details-group">
+                  
+                    <p class="contact-text">Deje su mensaje y se le respondera a la brevedad</p>
+                </div>
+            </div>
+
+            <!--formulario contacto-->
+
+            <form class="contact-form">
+                <div class="contact-form-group">
+                    <label for="name">Nombre</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="name">Email</label>
+                    <input required type="email" name="name" id="name">
+                </div>
+
+                <div class="contact-form-group">
+                    <label for="message">mensaje</label>
+                    <textarea required name="message" id="message" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="contact-form-submit">Enviar</button>
+
+
+            </form>
+        <!--Navegacion con iconos de redes sociales -->
+            <nav class="social">
+                <ul class="social-list">
+                    <li>
+                        <a href="http://twitter.com" class="social-link">
+                            <img src="img/icons/twitter.svg" alt="twitter-profile">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://facebook.com" class="social-link">
+                            <img src="img/icons/facebook.svg" alt="facebook-profile">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://youtube.com" class="social-link">
+                            <img src="img/icons/youtube.svg" alt="youtube-profile">
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+
+        </section>
   </body>
 </html>
