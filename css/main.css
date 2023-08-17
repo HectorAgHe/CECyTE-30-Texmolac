@@ -1,10 +1,10 @@
 :root{
-    --theme-color:white;
+    --theme-color: rgb(255, 255, 255);
     --primary-color:#124f88;
     --secundary-color: #F7C331;
     --text-color-inverse: white;
     --text-color:black;
-    --navbar-shallow-color:#e5e5e5;
+    --navbar-shallow-color:#fc9712;
     --menu-mobile-background-color:#001d6d;
 
     --primary-color-wave: #0CA914;
@@ -67,4 +67,14 @@ a{
         padding-bottom: 70px;
     }
 
+}
+
+.s-center{
+    text-align: center;
+}
+@media screen and (min-width: 980px){
+    .s-center{
+        text-align: left;
+    }
+    
 }

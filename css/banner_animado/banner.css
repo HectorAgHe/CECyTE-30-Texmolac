@@ -1,0 +1,40 @@
+.main-banner{
+    background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a
+    44.41%, #101034 56.43%, #141034 69.58%, #301436 100%, #411958 0);
+    width: auto;
+    height: 350px;
+    color: #fff;
+    padding: 2rem 1rem 0;
+
+
+
+    padding-top: 78px;
+}
+
+.title{
+    font-family: Orbitron, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+.description{
+    font-size: 0.8rem;
+}
+.line-2{
+    /*color: #16c416;*/
+    color: #16f4d0;
+}
+ 
+@media screen and (min-width: 980px){
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+}
+
+
+
+
