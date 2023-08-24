@@ -10,11 +10,12 @@
 
     padding-top: 78px;
 }
+/*Titulo y descripcion*/
 
 .title{
     font-family: Orbitron, sans-serif;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: center; 
 
 }
 .description{
@@ -22,7 +23,7 @@
 }
 .line-2{
     /*color: #16c416;*/
-    color: #16f4d0;
+    color: #16f4d0; 
 }
  
 @media screen and (min-width: 980px){
@@ -35,6 +36,94 @@
     }
 }
 
+/*Fin titulo y descripcion*/
+
+/*Inicio countdown*/
+
+.countdown{
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 980px){
+    .countdown{
+        justify-content: flex-start;
+    }
+}
 
 
+.countdown-item{
 
+    padding: 0 .5rem;
+    align-items: center;
+    position: relative;
+}
+
+.countdown-item:not(:last-of-type):before{
+    position: absolute;
+    right: 0;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #fff;
+    opacity: .5;
+
+}
+
+.countdown-number{
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-right: .25rem;
+    color: #dfa6f9;
+}
+.countdown-letter{
+    opacity: .5;
+}
+
+
+/*Fin del countdwn*/
+
+
+/*Inicio del formulario*/
+
+.form-container{
+    height: 2.5rem;
+}
+
+.form{
+    display: inline-flex;
+   
+}
+.input{
+    line-height: 2.5rem;
+    width: 15rem;
+    background: none;
+    border: 1px solid rgba(255, 255, 255,.4);
+    padding: 0 .5rem;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255,.5);
+}
+.button{
+    padding: 0 1rem;
+    border-radius: 0 .25rem .25rem 0;
+    border: none;
+    color: #0142a0;
+    font-weight: bold;
+    
+}
+
+.button:hover{
+    
+        filter: drop-shadow(0 0 12px#16f4d0);
+    }
+
+.form-hint{
+    font-size: .7rem;
+    margin: 1 0 1rem;
+}

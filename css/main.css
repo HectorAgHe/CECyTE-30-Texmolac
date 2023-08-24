@@ -76,5 +76,8 @@ a{
     .s-center{
         text-align: left;
     }
-    
+}
+
+.flex{
+    display: flex;
 }
