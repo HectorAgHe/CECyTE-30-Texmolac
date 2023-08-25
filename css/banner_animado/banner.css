@@ -2,7 +2,7 @@
     background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a
     44.41%, #101034 56.43%, #141034 69.58%, #301436 100%, #411958 0);
     width: auto;
-    height: 350px;
+    height:auto;
     color: #fff;
     padding: 2rem 1rem 0;
 
@@ -10,6 +10,14 @@
 
     padding-top: 78px;
 }
+@media screen and (min-width: 980px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
 /*Titulo y descripcion*/
 
 .title{
@@ -22,8 +30,8 @@
     font-size: 0.8rem;
 }
 .line-2{
-    /*color: #16c416;*/
-    color: #16f4d0; 
+    color: #16c416;
+    /*color: #16c4d6; */
 }
  
 @media screen and (min-width: 980px){
@@ -77,10 +85,12 @@
     font-size: 1.75em;
     font-weight: bold;
     margin-right: .25rem;
-    color: #dfa6f9;
+    /*color: #dfa6f9;*/
+    color: orangered;
 }
 .countdown-letter{
-    opacity: .5;
+    font-weight: bold;
+    color:darkgray;
 }
 
 
@@ -91,6 +101,7 @@
 
 .form-container{
     height: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .form{
