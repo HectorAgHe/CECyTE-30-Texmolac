@@ -1,6 +1,7 @@
 .skills{
     max-width: 980px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .skills-title{
@@ -26,7 +27,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    
 }
+
+.parrafo-habilidades{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: oswald;
+    text-align: center;
+    
+}
+.carousel-inner img{
+    max-height: 35rem;
+}
+
+
+
 @media(min-width:950){
     .skills-title{
         font-size: 50px;
@@ -46,4 +63,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+
+   
 }

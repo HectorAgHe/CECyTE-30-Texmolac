@@ -7,6 +7,7 @@
 
     display: grid;
     gap: 25px;
+    margin-top: 0;
 }
 
 .contact p,
@@ -89,6 +90,13 @@
     filter: drop-shadow(0 0 14px var(--secundary-color));
 }
 
+.onda-finalpag{
+    width: 100%;
+    position: relative;
+    top: 2px;
+
+}
+
 
 @media (min-width: 950px) {
     .contact {
@@ -145,4 +153,5 @@
            1fr       1fr;
            align-items: start;
     }
+
 }

@@ -13,9 +13,10 @@
     width: 100%;
     position: relative;
     top: 2px;
+    transform: scaleY(-1);
 }
 .wave-bottom{
-    transform: scaleY(-1);
+    transform: scaleY(1);
     top: -2px;
 }
 .experiences-title{
@@ -58,7 +59,26 @@
     justify-content: center;
 }
 
-
+.seccion-videos{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+.contenido-video1{
+    width: 100%;
+    height: 200px;
+}
+.contenido-video2{
+    width: 100%;
+    height: 200px;
+}
+/*
+.seccion-videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+*/
 @media(min-width:950px){
 
     .experiences-title{
@@ -132,5 +152,45 @@
     .line::after{
         top: 100%;
         z-index: 1;
+    }
+
+
+
+    .video1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin-top: 20px;
+        
+        
+    }
+
+    .video2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        margin-top: 20px;
+        
+        
+        
+    }
+    
+    .contenido-video1{
+        justify-content: center;
+        height: 300px;
+        
+    }
+
+    .contenido-video2{
+        justify-content: center;
+        height: 300px;
+    }
+
+    .videos-titulo{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
     }
 }

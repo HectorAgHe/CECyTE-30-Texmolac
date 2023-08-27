@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Manrope:wght@400;700&family=Orbitron:wght@400;500;600&family=Oswald:wght@300;400&family=Teko&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
 
     <link rel="stylesheet" href="css/banner_animado/style.css">
@@ -67,7 +68,6 @@
         <!-- grid-container -->
         <div class="grid-container">
 
-        
 
         <!-- banner-container -->
         <div class="content">
@@ -145,17 +145,32 @@
                 <p class="profile-details">
                     somos una institucion comprometida con la educacion de nuestros estudiantes, nuestra mision es: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit cupiditate illum odit veritatis eveniet perferendis expedita! Perspiciatis dignissimos quae dolores facere voluptatum optio. Voluptate. Y la vision es:
                 </p>
-                <button class="profile-btn">descargar inf.</button>
+                
+                <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" >
+                    <a href="r1.pdf" download>Click para Descargar Inf.</a>
+                </button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Descargando PDF</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+                
+                <!--<button class="profile-btn">Descargar PDF.</button>-->
             </div>
             <span class="profile-img-section">
-                <img class="profile-img" src="img/prueba.jpg" alt="cecyte instalaciones">
-                <div class="profile-img-line"></div>
+                <img class="profile-img" src="img/carrusel/carrusel-foto4.jpg" alt="cecyte instalaciones">
+                
             </span>
         </section>
     </div>
 <!--La onda imagen svg ocup el 100% de la pagina correspondiente a la cercania o zoom-->
     <section class="experiences" id="experiences">
-        <img src="img/onda-division.svg" alt="division" class="wave">
+        <img src="img/ondaa1.svg" alt="division" class="wave">
         <div class="experiences-body">
             <h2 class="experiences-title">Experiencias</h2>
             <div class="experiences-grid">
@@ -207,27 +222,115 @@
                 <div class="line"></div>
 
 
-
             </div>
-        </div>
+
+
+            <div class="seccion-videos">
+
+                <div class="video1">
+                    <div class="videos-titulo">
+                        <h1>Valores CECyTE</h1>
+                    </div>
+                    <div class="contenido-video1">
+                        <iframe src="https://www.youtube.com/embed/4tlveIUp4yU?si=XzXJUZD9NcjQpd6j" width="90%" height="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="video2">
+                    <div class="videos-titulo">
+                        <h1 class="videos-titulo">CECyTE</h1>
+                    </div>
+                    <div class="contenido-video2">
+                        <iframe width="90%" height="100%" src="https://www.youtube.com/embed/IX8SLH-rF58?si=fj65Jh7a-tdK7ge5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            </div>
         <!--Esta es la misma onda del inicio de la seccion y con css se volteo para unir la seccion-->
-        <img src="img/onda-division.svg" alt="division" class="wave wave-bottom">
+        <img src="img/ondaa.svg" alt="division" class="wave wave-bottom">
     </section>
 
-
+    <!--Habilidades comparte espacio con seccion de carrusel de fotos-->
     <div class="horizontal-padding vertical-padding">
         <section class="skills" id="skills">
             <h2 class="skills-title">Habilidades</h2>
+            <p class="parrafo-habilidades">Con nosotros adquiriras algunas habilidades en diferentes tecnologias acorde a la especialidad que eligas, algunas son: </p>
             <ul class="skills-list">
                 <li class="skills-skill">Css</li>
                 <li class="skills-skill">HTML</li>
                 <li class="skills-skill">JavaScript</li>
                 <li class="skills-skill">Python</li>
                 <li class="skills-skill">Java</li>
+                <li class="skills-skill">Arduino</li>
+                <li class="skills-skill">Autocad</li>
+                <li class="skills-skill">Blender</li>
+                <li class="skills-skill">Canva</li>
+                <li class="skills-skill">PhotoShop</li>
             </ul>
         </section>
+
+
+        <!--Comienza Carrusel de imgs-->
+
+        <div class="contenido-carrusel ">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            
+                </div>
+            
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/carrusel/carrusel-foto1.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto2.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto3.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto4.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto5.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto6.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto7.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel/carrusel-foto8.jpg" class="d-block w-100" alt="Problema al visualizar">
+                  </div>
+            
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+
     </div>
 
+
+
+
+
+    <!--Comienza seccion de contacto-->
     <div class="horizontal-padding vertical-padding">
         <section class="contact" id="contact">
             <h2 class="contact-title">Contacto</h2>
@@ -297,8 +400,32 @@
             </nav>
         </section>
         <div class="mapa">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1KAHbxBqLjA?si=IJRhCg4L4nD-xRKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <style>
+                .mapa{
+                    margin: 25px;
+                }
+                .mapa iframe{
+                    margin-top: 25px;
+                }
+                
+            </style>
+
+            <div class="title-mapa skills-title">Mapa del lugar</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.801446650742!2d-98.04807992600198!3d19.420983041054143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d01dd8b726380d%3A0x28f1d54da3f6af0f!2sCECYTE!5e0!3m2!1sen!2smx!4v1693027282119!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
         </div>
 
+      
+
+      
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
+
+  <div class="wave-bottom">
+    <img src="img/onda-finalPag.svg" alt="">
+</div>
+  
 </html>

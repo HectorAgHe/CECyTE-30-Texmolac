@@ -1,3 +1,23 @@
+window.addEventListener('scroll', function(){
+    var header = document.querySelector(".topheader");
+
+    header.classList.toggle("abajo", window.scrollY>0);
+    header.classList.toggle("arriba", window.scrollY<0);
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");

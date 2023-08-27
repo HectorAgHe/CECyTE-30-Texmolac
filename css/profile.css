@@ -4,10 +4,11 @@
 }
 
 .profile-img{
-    width: 80%;
-    max-width: 350px;
+    width: 100%;
+    max-width: 500px;
 }
 .profile-img-section{
+    
     position: relative;
     display: inline;
     
@@ -45,7 +46,7 @@ text-align: center;
     
 }
 
-.profile-btn{
+profile-btn{
     background-color: var(--primary-color);
     color: var(--text-color-inverse);
     border: none;
@@ -72,7 +73,8 @@ text-align: center;
     
     .profile-img{
         width: 100%;
-        max-width: 350px;
+        max-width: 500px;
+        height: 100%;
         transform: scaleX(-1); 
     }
   
