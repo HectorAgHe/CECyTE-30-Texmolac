@@ -4,12 +4,14 @@
     padding: 0;
 }
 
-.skills-title{
+.skills-title, 
+.egresados-title{
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
+
 
 .skills-skill{
     font-size: 20px;
@@ -38,10 +40,24 @@
     text-align: center;
     
 }
+
+.parrafo-egresados{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: oswald;
+    text-align: center;
+    list-style:none;
+
+    
+}
+
 .carousel-inner img{
     max-height: 35rem;
 }
+.contenido-carrusel{
+    transform: scale(.9);
 
+}
 
 
 @media(min-width:950){
@@ -64,6 +80,14 @@
         justify-content: center;
     }
 
+
+    .contenido-carrusel{
+        transform: scale();
+    
+    }
+    
+
+   
 
    
 }

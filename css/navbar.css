@@ -1,5 +1,5 @@
 .topheader{
-    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    box-shadow: 0 4px 5px var(--primary-color-wave);
     position: fixed;
     background-color: rgb(248, 241, 241);
     left: 0;
@@ -8,13 +8,11 @@
     z-index: 100;
     
 }
-
+/*
 .topheader.abajo{
-    
-    transition: 1.5s;
-    display: none;
+    background: transparent;
 }
-
+*/
 
 
 
@@ -80,7 +78,7 @@
 
 .menu a::after{  
     content: "";
-    background-color: var(--secundary-color);
+    background-color: var(--navbar-shallow-color);
     position: absolute;
     left: 0;
     top: calc(100% + 4px);

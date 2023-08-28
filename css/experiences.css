@@ -5,7 +5,7 @@
 }
 .experiences-body{
     /*Antes estaba  background-color con la variable en main css*/
-    background: linear-gradient(180deg,#004790,#010048);;
+    background: linear-gradient(180deg,#004790,#010048);
     color: var(--text-color-inverse);
 }
 

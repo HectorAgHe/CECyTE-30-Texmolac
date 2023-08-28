@@ -1,5 +1,5 @@
 .contact {
-    background-color: var(--primary-color);
+      background: linear-gradient(180deg,#010048,#004790);
     color: var(--text-color-inverse);
     font-size: 18px;
     border-radius: 12px;
