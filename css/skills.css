@@ -52,12 +52,10 @@
 }
 
 .carousel-inner img{
-    max-height: 35rem;
+    max-height: 39rem;
 }
-.contenido-carrusel{
-    transform: scale(.9);
 
-}
+
 
 
 @media(min-width:950){
@@ -81,10 +79,7 @@
     }
 
 
-    .contenido-carrusel{
-        transform: scale();
-    
-    }
+   
     
 
    

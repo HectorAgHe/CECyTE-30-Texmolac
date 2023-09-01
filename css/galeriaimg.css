@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.galeriaimg{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    font-family: orbitron;
+    transition: all 0.5s;
+    background: #333;
+}
+ 
+.galeriaimg .image{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 500px;
+    max-width: 900px;
+    width: calc(100% - 100);
+    height: 400px;
+
+}
+
+.galeriaimg .image{
+    position: relative;
+    overflow: hidden ;
+    min-width: 60px;
+    margin: 10px;
+    background-size: auto 100% ;
+    background-position: center;
+    cursor: pointer;
+    transition: .6s cubic-bezier(0.1,0.1,0.1,0.1);
+   
+}
+
+.galeriaimg .image.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 500px;
+    margin: 0;
+    border-radius: 25px;
+    background-size: auto 100%;
+
+}
+
+.galeriaimg .image.active .label{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+.galeriaimg .image:not(.active) {
+    flex-grow: 1;
+    border-radius: 25px;
+    transition: .1s;
+}
+
+.galeriaimg .image:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+    transition: 5s;
+    
+    
+}
+.galeriaimg .image:not(.active) .label .info {
+    display: none;
+    transition: .5s;
+}
+
+.galeriaimg .image .label {
+    display: flex;
+    position: absolute;
+}
+.galeriaimg .image .label .icon{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+}
+
+.galeriaimg .image .label .info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #fff;   
+}
+.galeriaimg .image .label .info .main{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 718px){
+
+    .galeriaimg {
+        min-width: 520px;
+    }
+    .galeriaimg .image:nth-child(5){
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 618px){
+
+    .galeriaimg {
+        min-width: 440px;
+    }
+    .galeriaimg .image:nth-child(4){
+        display: none;
+
+    }
+}
+@media screen and (max-width: 418px){
+
+    .galeriaimg {
+        min-width: 520px;
+    }
+    .galeriaimg .image:nth-child(3){
+        display: none;
+
+    }
+}
