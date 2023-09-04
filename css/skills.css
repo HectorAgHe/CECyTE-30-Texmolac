@@ -55,6 +55,13 @@
     max-height: 39rem;
 }
 
+.parrafo-egresados-carrusel{
+    text-align: center;
+    color: gray;
+    font-size: 25px;
+    margin: 0 0;
+}
+
 
 
 
@@ -78,6 +85,13 @@
         justify-content: center;
     }
 
+    .parrafo-egresados-carrusel{
+        color: gray;
+        font-size: 30px;
+    
+
+    }
+    
 
    
     

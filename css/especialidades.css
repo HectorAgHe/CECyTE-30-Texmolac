@@ -22,6 +22,28 @@
     font-family: oswald;
     text-align: center;
 }
+.videos-proyectos{
+    display: flex;
+    justify-content: space-between ;
+  
+}
+
+
+.video-proyectos-1{
+    height: 500px;
+    width: 500px;
+    justify-content: space-between;
+    margin: 15px;
+    
+}
+.video-proyectos-2{
+    height:500px;
+    width: 500px;
+    margin: 15px;
+    
+   
+}
+
 
 @media(max-width: 780px){
     .especialidades{
@@ -34,4 +56,23 @@
     .card{
         margin-top: 20px;
     }
+
+    .videos-proyectos{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+    .video-proyectos-1{
+      height: 300px;
+      width: 100%
+    }
+    .video-proyectos-2{
+        height: 400px;
+       width: 100%;
+       margin: 0;
+       margin-top: 0;
+    }
+
 }
