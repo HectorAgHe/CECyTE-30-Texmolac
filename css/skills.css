@@ -10,8 +10,12 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    font-family: orbitron;
 }
-
+.skills-title-especialidad{
+    font-size: 20px;
+    text-align: center;
+}
 
 .skills-skill{
     font-size: 20px;
@@ -20,6 +24,16 @@
     border-radius: 42px;
     padding: 0.5em 0.7em;
     margin: 10px;
+}
+
+.skills-mecatronica{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,107,121,0.9976365546218487) 2%, rgba(0,212,255,1) 100%);
+}
+.skills-programacion{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,241,235,1) 2%, rgba(0,91,255,1) 35%);
+}
+.skills-digital{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,241,235,0.7539390756302521) 5%, rgba(115,0,255,0.7847514005602241) 35%);
 }
 
 .skills-list{

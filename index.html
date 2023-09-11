@@ -93,23 +93,24 @@
                 <p> El nuevo ciclo escolar empieza en:</p>   <!--Deberia ir un span-->
                 <div class="flex">
                     <p class="countdown-item flex">
-                        <span class="countdown-number">03</span>
+                        <span class="countdown-number" id="days">03</span>
                         <span class="countdown-letter">D</span>
                     </p>
                     <p class="countdown-item flex">
-                        <span class="countdown-number">1</span>
+                        <span class="countdown-number" id="hours">1</span>
                         <span class="countdown-letter">H</span>
                     </p>
                     <p class="countdown-item flex">
-                        <span class="countdown-number">48</span>
+                        <span class="countdown-number" id="minutes">48</span>
                         <span class="countdown-letter">M</span>
                     </p>
                     <p class="countdown-item flex">
-                        <span class="countdown-number">11</span>
+                        <span class="countdown-number" id="seconds">11</span>
                         <span class="countdown-letter">S</span>
                     </p>
                 </div>
             </div>
+
             <!-- Seccion de formulario-->
             <div class="form-container s-center">
                 <!--Formulario de inscripcion-->
@@ -174,11 +175,20 @@
                 <!--<button class="profile-btn">Descargar PDF.</button>-->
             </div>
             <span class="profile-img-section">
-                <img class="profile-img" src="img/carrusel/carrusel-foto4.jpg" alt="cecyte instalaciones">
+                <img class="profile-img" src="img/cecyte-instalaciones.jpg" alt="cecyte instalaciones">
                 
             </span>
         </section>
     </div>
+
+
+    <div class="img-banner">
+        <img src="img/Banner_generico.jpeg" class="img-fluid" alt="banner-generico">
+    </div>
+
+
+<!--Comienza seccion ACERCA-->
+    
 <!--La onda imagen svg ocup el 100% de la pagina correspondiente a la cercania o zoom-->
     <section class="experiences" id="acerca">
         <img src="img/ondaa1.svg" alt="division" class="wave">
@@ -219,7 +229,7 @@
                     <div class="experience-company"> El estudiante</div>
                     <div class="experience-position"> Constituye el centro del Modelo Educativo</div>
                     <div class="experience-description">
-                        El estudiante desarrolla habilidades, destrezas, actitudes y valores, y adquiere sólidos y 
+                        El estudiante desarrolla habilidades, destrezas, actitudes y valores. Adquieriendo sólidos y 
                         amplios conocimientos en su área de estudio. Además, es un individuo que actúa con 
                         compromiso ético y en forma solidaria con sus semejantes, colabora en el avance de la 
                         sociedad a partir de sus propias capacidades; practica la responsabilidad social y el 
@@ -250,7 +260,7 @@
 
                 <div class="video1">
                     <div class="videos-titulo">
-                        <h1>Valores CECyTE</h1>
+                        <h1 class="experience-date">Valores CECyTE</h1>
                     </div>
                     <div class="contenido-video1">
                         <iframe src="https://www.youtube.com/embed/4tlveIUp4yU?si=XzXJUZD9NcjQpd6j" width="90%" height="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -258,7 +268,7 @@
                 </div>
                 <div class="video2">
                     <div class="videos-titulo">
-                        <h1 class="videos-titulo">CECyTE</h1>
+                        <h1 class="videos-titulo experience-date">CECyTE</h1>
                     </div>
                     <div class="contenido-video2">
                         <iframe width="90%" height="100%" src="https://www.youtube.com/embed/IX8SLH-rF58?si=fj65Jh7a-tdK7ge5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -269,24 +279,46 @@
         <!--Esta es la misma onda del inicio de la seccion y con css se volteo para unir la seccion-->
         <img src="img/ondaa.svg" alt="division" class="wave wave-bottom">
     </section>
-
+    
     <!--Habilidades comparte espacio con seccion de carrusel de fotos-->
     <div class="horizontal-padding vertical-padding">
         <section class="skills" id="habilidades">
             <h2 class="skills-title">Habilidades</h2>
             <p class="parrafo-habilidades">Con nosotros adquiriras algunas habilidades en diferentes tecnologias acorde a la especialidad que eligas, algunas son: </p>
+            <p class="skills-title-especialidad">Habilidades que desarrollaras en Mecatronica</p>
             <ul class="skills-list">
-                <li class="skills-skill">Css</li>
-                <li class="skills-skill">HTML</li>
-                <li class="skills-skill">JavaScript</li>
-                <li class="skills-skill">Python</li>
-                <li class="skills-skill">Java</li>
-                <li class="skills-skill">Arduino</li>
-                <li class="skills-skill">Autocad</li>
-                <li class="skills-skill">Blender</li>
-                <li class="skills-skill">Canva</li>
-                <li class="skills-skill">PhotoShop</li>
+                <li class="skills-skill skills-mecatronica">Inteligencia espacial</li>
+                <li class="skills-skill skills-mecatronica">Trabajo en equipo</li>
+                <li class="skills-skill skills-mecatronica">Pensamiento matemático</li>
+                <li class="skills-skill skills-mecatronica">Pensamiento critico</li>
+                <li class="skills-skill skills-mecatronica">Creatividad</li>
+                <li class="skills-skill skills-mecatronica">Analisis</li>
+                <li class="skills-skill skills-mecatronica">Gestion del tiempo</li>         
             </ul>
+
+            <p class="skills-title-especialidad">Habilidades que desarrollaras en Programación</p>
+            <ul class="skills-list">
+                <li class="skills-skill skills-programacion">Pensamiento lógico</li>
+                <li class="skills-skill skills-programacion">Aptitud matemática</li>
+                <li class="skills-skill skills-programacion">Atencion al detalle</li>
+                <li class="skills-skill skills-programacion">Desarrollo de nuevas tecnologías</li>
+                <li class="skills-skill skills-programacion">Diferentes lenguajes de programación</li>
+                <li class="skills-skill skills-programacion">Gestión del tiempo</li>
+                <li class="skills-skill skills-programacion">Análisis y resolución de problemas</li>
+            </ul>
+            <p class="skills-title-especialidad">Habilidades que desarrollaras en Animación Digital</p>
+            <p class="skills-title-especialidad">
+                <ul class="skills-list">
+                    <li class="skills-skill skills-digital">Creatividad</li>
+                    <li class="skills-skill skills-digital">Trabajo en equipo</li>
+                    <li class="skills-skill skills-digital">Creación de diseños</li>
+                    <li class="skills-skill skills-digital">Absorción rapida de la información</li>
+                    <li class="skills-skill skills-digital">Producción de animaciones 2D y 3D</li>
+                    <li class="skills-skill skills-digital">Edición de fotografias</li>
+                    <li class="skills-skill skills-digital">Creacion de mundos virtuales para la web</li>
+
+                </ul>
+            </p>
         </section>
 
         
@@ -459,62 +491,62 @@
 
     <!--Comienza la parte de la galeria de imgs__Las img estan agregadas con css-->
     <section class="galeriaimg">
-        <div class="image active"style="background-image: url(img/Mecatronica-proyecto.jpg);">
+        <div class="image active"style="background-image: url(img/galeria-imagenes/Edificio_IMG_11.jpg);">
             <div class="label">
                 <div class="icon">
                     <i class="bi bi-camera2"></i>
                 </div>
                 <div class="info">
-                    <p class="main">Primera imagen</p>
-                    <p class="sub">Foto tomada en 2012</p>
+                    <p class="main">Edificio C</p>
+                    <p class="sub">Fotografia - 2023</p>
                 </div>
             </div>
         </div>
 
-        <div class="image" style="background-image: url(img/Mecatronica-proyecto.jpg);">
+        <div class="image" style="background-image: url(img/galeria-imagenes/Alumnos_E.mecatronica_IMG_9.jpg);">
             <div class="label"> 
                 <div class="icon">
                     <i class="bi bi-camera2"></i>
                 </div>
                 <div class="info">
-                    <p class="main">Primera imagen</p>
-                    <p class="sub">Foto tomada en 2012</p>
+                    <p class="main">Alumnos y proyectos Seguidores de linea</p>
+                    <p class="sub">Fotografia - 2023</p>
                 </div>
             </div>
         </div>
 
-        <div class="image" style="background-image: url(img/Mecatronica-proyecto.jpg);">
+        <div class="image" style="background-image: url(img/galeria-imagenes/Curso_IMG_3.jpg);">
             <div class="label">
                 <div class="icon">
                     <i class="bi bi-camera2"></i>
                 </div>
                 <div class="info">
-                    <p class="main">Primera imagen</p>
-                    <p class="sub">Foto tomada en 2012</p>
+                    <p class="main">Curso Primeros auxilios</p>
+                    <p class="sub">Fotografia 2023</p>
                 </div>
             </div>
         </div>
 
-        <div class="image" style="background-image: url(img/Mecatronica-proyecto.jpg);">
+        <div class="image" style="background-image: url(img/galeria-imagenes/Conferencia_IMG_6.jpg);">
             <div class="label">
                 <div class="icon">
                     <i class="bi bi-camera2"></i>
                 </div>
                 <div class="info">
-                    <p class="main">Primera imagen</p>
-                    <p class="sub">Foto tomada en 2012</p>
+                    <p class="main">Conferencia</p>
+                    <p class="sub">Fotografia - 2023</p>
                 </div>
             </div>
         </div>
 
-        <div class="image" style="background-image: url(img/Mecatronica-proyecto.jpg);">
+        <div class="image" style="background-image: url(img/galeria-imagenes/Conferencia_IMG_7.jpg);">
             <div class="label">
                 <div class="icon">
                     <i class="bi bi-camera2"></i>
                 </div>
                 <div class="info">
-                    <p class="main">Primera imagen</p>
-                    <p class="sub">Foto tomada en 2012</p>
+                    <p class="main">Conferencia</p>
+                    <p class="sub">Fotografia - 2023</p>
                 </div>
             </div>
         </div>
@@ -574,7 +606,7 @@
                 </div>
 
                 <div class="contact-form-group">
-                    <label for="message">mensaje</label>
+                    <label for="message">Mensaje</label>
                     <textarea required name="message" id="message" rows="6"></textarea>
                 </div>
 
@@ -586,19 +618,19 @@
             <nav class="social">
                 <ul class="social-list">
                     <li>
-                        <a href="http://twitter.com" target="_blank" class="social-link">
+                        <a href="https://twitter.com/CecyteTlaxcala" target="_blank" class="social-link">
                             <img src="img/icons/twitter.svg"  alt="twitter-profile">
                         </a>
                     </li>
 
                     <li>
-                        <a href="http://facebook.com" target="_blank" class="social-link">
+                        <a href="https://www.facebook.com/profile.php?id=100007829178237" target="_blank" class="social-link">
                             <img src="img/icons/facebook.svg" alt="facebook-profile">
                         </a>
                     </li>
 
                     <li>
-                        <a href="http://youtube.com" target="_blank" class="social-link">
+                        <a href="https://www.youtube.com/@cecyte-emsadtlaxcala1338/videos" target="_blank" class="social-link">
                             <img src="img/icons/youtube.svg" alt="youtube-profile">
                         </a>
                     </li>

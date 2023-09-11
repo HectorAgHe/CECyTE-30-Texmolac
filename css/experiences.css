@@ -73,6 +73,9 @@
     width: 100%;
     height: 200px;
 }
+.videos-titulo{
+    margin-top: 10px;
+}
 /*
 .seccion-videos{
     display: grid;
@@ -82,15 +85,15 @@
 @media(min-width:950px){
 
     .experiences-title{
-        font-size: 50px;
+        font-size: 40px;
         margin: 35px 0;
     }
     .experience-date{
-        font-size: 40px;
+        font-size: 35px;
     
     }
     .experience-company{
-        font-size: 25px;
+        font-size: 20px;
     
     }
     .experience-position{
@@ -191,6 +194,7 @@
         justify-content: center;
         display: flex;
         align-items: center;
+        
 
     }
 }
