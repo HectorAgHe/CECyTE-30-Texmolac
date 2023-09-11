@@ -1,7 +1,7 @@
 .topheader{
     box-shadow: 0 4px 5px var(--primary-color-wave);
     position: fixed;
-    background-color: rgb(248, 241, 241);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 33%, rgba(178,200,200,1) 92%, rgba(100,223,117,0.9472163865546218) 99%);
     left: 0;
     top: 0;
     width: 100%;
