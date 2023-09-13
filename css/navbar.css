@@ -35,7 +35,7 @@
 }
 .logo img{
     height: 87px;
-    width: 200px;
+    width: 190px;
     border-radius: 10%;
    /*   padding: 5px;
    box-shadow: 0 4px 5px var(--navbar-shallow-color);*/
@@ -113,6 +113,7 @@
         font-size: 18px;
         
     } 
+
     .logo img{
         height: 80px;
         width: 110px;
