@@ -112,9 +112,10 @@
         align-items: center;
         font-size: 18px;
         
-    }
+    } 
     .logo img{
         height: 80px;
+        width: 110px;
         border-radius: 10%;
        /*   padding: 5px;
        box-shadow: 0 4px 5px var(--navbar-shallow-color);*/
