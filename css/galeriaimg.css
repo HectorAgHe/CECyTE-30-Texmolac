@@ -28,7 +28,7 @@
 
 .galeriaimg .image{
     position: relative;
-    overflow: hidden ;
+    overflow: hidden;
     min-width: 60px;
     margin: 10px;
     background-size: auto 100% ;
