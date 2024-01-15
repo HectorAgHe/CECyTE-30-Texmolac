@@ -115,12 +115,28 @@
             <div class="form-container s-center">
                 <!--Formulario de inscripcion-->
                 <form class="form">
-                    <input type="email" name="email" class="input" required placeholder="Ingresa tu correo electronico">
-                    <button type="submit" class="button">Enviar</button>
+                    <input id="mensaje" type="text" name="mensaje" class="input" required placeholder="Escribenos un mensaje">
+                    <button id="sendCorreo" type="submit" class="button">Enviar</button>
                 </form>
+<!--Script para envio de correo-banner-->
+
+<script>
+    const Envio = document.getElementById('sendCorreo');
+
+    Envio.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const mensaje = document.getElementById('mensaje').value;
+
+        window.location.href=`mailto:cecyte30@cecytlax.edu.mx?subject=Solicito_Informacion&body=Mensaje%3A${mensaje}`
+        
+    });
+</script>                
+
+
 
                 <!-- Mensaje -->  
-                <p class="form-hint s-center">Deja tu correo para obtener mas información</p>
+                <p class="form-hint s-center">Envianos tu ménsaje y obten más información</p>
             </div>
         </div>
 
@@ -594,7 +610,7 @@
 
             <!--formulario contacto-->
 
-            <form acción="https://formsubmit.co/ aguilarhector440@gmail.com" método="POST" class="contact-form">
+            <form  method="post" class="contact-form">
                 <div class="contact-form-group">
                     <label for="name">Nombre</label>
                     <input required type="text" name="name email" id="name">
@@ -602,7 +618,7 @@
 
                 <div class="contact-form-group">
                     <label for="name">Email</label>
-                    <input required type="email" name="email" id="name">
+                    <input required type="email" name="email" id="email">
                 </div>
 
                 <div class="contact-form-group">
@@ -610,10 +626,27 @@
                     <textarea required name="message email" id="message" rows="6"></textarea>
                 </div>
 
-                <button type="submit" class="contact-form-submit">Enviar</button>
+                <button id="enviarCorreo" type="submit" class="contact-form-submit">Enviar</button>
 
 
             </form>
+            <!--Script para envio formulario-->
+
+            <script>
+                const btnEnvio = document.getElementById('enviarCorreo');
+
+                btnEnvio.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const nombre = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const mensaje = document.getElementById('message').value;
+
+                    window.location.href=`mailto:cecyte30@cecytlax.edu.mx?subject=Solicito_Informacion&body=Nombre%3A${nombre}%0AEmail%3A%20${email}%0AMensaje%3A%20${mensaje}`
+                    
+                });
+            </script>
+
+
         <!--Navegacion con iconos de redes sociales -->
             <nav class="social">
                 <ul class="social-list">
